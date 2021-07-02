@@ -189,7 +189,7 @@ body {
     margin: 2em 0rem;
 }
 
-.hobbies-list > li{
+.hobbies-list>li {
     font-size: 1.3rem;
     font-weight: 600;
     margin: .8rem;
@@ -279,6 +279,53 @@ body {
         color: #FFFFFF;
         font-weight: 700;
         font-size: 1.3rem;
+    }
+
+    /*Sobre Mi*/
+    .sobre-mi {
+        padding: 2rem 2rem;
+        background-color: rgb(248, 246, 246);
+    }
+
+    .sobre-mi-container{
+        display: flex;
+    }
+
+    .sobre-mi-text>h2 {
+        text-align: left;
+        margin: .8rem 0rem;
+        font-size: 2rem;
+        border-bottom: thin solid #1760BF;
+        width: 50%;
+    }
+
+    .sobre-mi-text>h4 {
+        font-size: 1.4rem;
+        margin: 1.5rem 0rem;
+    }
+
+    .hobbies-container{
+        margin-left: 2rem;
+        width: 30%;
+    }
+
+    .hobbies-container>h2 {
+        font-size: 2rem;
+        margin: .8rem 0rem;
+        text-align: left;
+        border-bottom: thin solid #1760BF;
+    }
+
+    .hobbies-list {
+        list-style: none;
+        text-align: left;
+        margin: 2em 0rem;
+    }
+
+    .hobbies-list>li {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: .8rem;
     }
 
 
