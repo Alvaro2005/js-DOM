@@ -116,6 +116,7 @@ body {
     height: auto;
     width: 100%;
     background: url("../img/hero-image-1.jpg") no-repeat center / cover;
+    background-attachment: fixed;
 }
 
 .container-hero-image {
@@ -162,6 +163,7 @@ body {
     height: auto;
     width: 100%;
     padding: 2rem 2rem;
+    background-color: rgba(241, 235, 235, 0.712);
 }
 
 .sobre-mi-text>h2 {
@@ -172,7 +174,8 @@ body {
 }
 
 .sobre-mi-text>h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     margin: 1.5rem 0rem;
 }
 
@@ -192,7 +195,35 @@ body {
 .hobbies-list>li {
     font-size: 1.3rem;
     font-weight: 600;
-    margin: .8rem;
+    margin: 1.4rem 0rem;
+}
+
+/*Habilidades*/
+
+.habilidades {
+    height: auto;
+    width: 100%;
+    padding: 4rem 1.5rem;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades-items {
+    margin: 5% auto;
+}
+
+.icon-habilidades {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-git-habilidades {
+    height: 25%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -239,6 +270,7 @@ body {
         height: auto;
         width: 100%;
         background: url("../img/hero-image-1.jpg") no-repeat center / cover;
+        background-attachment: fixed;
         padding: 5rem 3rem;
     }
 
@@ -284,10 +316,10 @@ body {
     /*Sobre Mi*/
     .sobre-mi {
         padding: 2rem 2rem;
-        background-color: rgb(248, 246, 246);
+        background-color: rgba(241, 235, 235, 0.712);
     }
 
-    .sobre-mi-container{
+    .sobre-mi-container {
         display: flex;
     }
 
@@ -304,7 +336,7 @@ body {
         margin: 1.5rem 0rem;
     }
 
-    .hobbies-container{
+    .hobbies-container {
         margin-left: 2rem;
         width: 30%;
     }
@@ -323,11 +355,22 @@ body {
     }
 
     .hobbies-list>li {
-        font-size: 1.3rem;
-        font-weight: 600;
-        margin: .8rem;
+        margin: 1.4rem 0rem;
     }
 
+    /*Habilidades*/
+    .habilidades {
+        height: auto;
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .habilidades-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -344,5 +387,17 @@ body {
         color: #FFFFFF;
         font-weight: 700;
         font-size: 1.3rem;
+    }
+
+    /*Habilidades*/
+    .habilidades {
+        height: auto;
+        width: 100%;
+        padding: 4rem 1rem;
+    }
+
+    .habilidades-container {
+        grid-template-columns: repeat(1, 1fr);
+
     }
 }
