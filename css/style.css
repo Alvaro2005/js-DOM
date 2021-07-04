@@ -170,7 +170,7 @@ body {
     text-align: center;
     margin: .8rem 0rem;
     font-size: 2rem;
-    border-bottom: thin solid #1760BF;
+    border-bottom: 2px solid #1760BF;
 }
 
 .sobre-mi-text>h4 {
@@ -183,7 +183,7 @@ body {
     font-size: 2rem;
     margin: .8rem 0rem;
     text-align: center;
-    border-bottom: thin solid #1760BF;
+    border-bottom: 2px solid #1760BF;
 }
 
 .hobbies-list {
@@ -206,6 +206,18 @@ body {
     padding: 4rem 1.5rem;
 }
 
+.habilidades-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 5% auto;
+    border-bottom: 2px solid #1760BF;
+    width: 80%;
+}
+
+.habilidades-title>h2 {
+    padding-bottom: 1rem;
+}
+
 .habilidades-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -222,8 +234,19 @@ body {
     flex-direction: column;
 }
 
+.icon-js-skill {
+    margin-bottom: 0.8rem;
+
+}
+
+.icon-css-skill {
+    margin-bottom: 3px;
+}
+
+
 .icon-git-habilidades {
-    height: 25%;
+    height: 10rem;
+    margin: 0px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -258,6 +281,8 @@ body {
 
     .menu a:hover {
         background-color: transparent;
+        color: #1760BF;
+        transition: all .3s ease;
     }
 
     .menu-icons-social {
@@ -372,6 +397,25 @@ body {
         align-items: center;
     }
 
+    .icon-html-skill {
+        margin-bottom: 0.5rem;
+        height: 9rem;
+    }
+
+    .icon-js-skill {
+        height: 8.5rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .icon-css-skill {
+        margin-bottom: rem;
+        height: 9rem;
+    }
+
+    .icon-git-habilidades {
+        height: 9.3rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -393,11 +437,33 @@ body {
     .habilidades {
         height: auto;
         width: 100%;
-        padding: 4rem 1rem;
+        padding: 4rem auto;
     }
 
     .habilidades-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 
+    .habilidades-items {
+        margin: 1rem 0rem;
+    }
+
+    .icon-html-skill {
+        margin-bottom: 0.5rem;
+    }
+
+    .icon-js-skill {
+        margin-bottom: 1.1rem;
+    }
+
+    .icon-css-skill {
+        margin-bottom: rem;
+        height: 8rem;
+    }
+
+    .icon-git-habilidades {
+        height: 8rem;
+        width: 8rem;
     }
 }
