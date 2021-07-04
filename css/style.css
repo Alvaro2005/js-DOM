@@ -249,6 +249,68 @@ body {
     margin: 0px;
 }
 
+/*Portafolio*/
+
+.portafolio {
+    height: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+
+}
+
+.container-portafolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5;
+}
+
+.portafolio>h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 5% auto;
+    border-bottom: 2px solid var(--firts-color);
+    width: 80%;
+}
+
+.portafolio-card {
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    display: block;
+}
+
+.portafolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portafolio-card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #5B89A6;
+    opacity: 0;
+    pointer-events: none;
+    color: #FFFFFF;
+    transition: all .5s ease-in-out;
+}
+
+.portafolio-card:hover .portafolio-card-info {
+    opacity: 0.8;
+    pointer-events: auto;
+}
+
+.portafolio-card-info>div {
+    padding: 1rem;
+    border: thin solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         padding: 0;
@@ -416,6 +478,20 @@ body {
         height: 9.3rem;
     }
 
+    /*Portafolio*/
+    .portafolio {
+        height: auto;
+        width: 100%;
+        padding: 2rem 3rem;
+
+    }
+
+    .container-portafolio {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -465,5 +541,13 @@ body {
     .icon-git-habilidades {
         height: 8rem;
         width: 8rem;
+    }
+
+    /*Portafolio*/
+
+    .container-portafolio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5;
     }
 }
