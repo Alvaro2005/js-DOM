@@ -259,26 +259,54 @@
 
             <aside class="contact-card box-shadow-1">
                 <i class="fas fa-phone icon-card-contact"></i>
-                <h5>TELÉFONO</h5>
+                <h5>Teléfono</h5>
                 <small><a href="tel:4261587942">(+58)4261587942</a></small>
             </aside>
 
             <aside class="contact-card box-shadow-1">
                 <i class="fas fa-envelope icon-card-contact"></i>
-                <h5>Ubicacion</h5>
-                <small>Venezuela, Estado Lara</small>
+                <h5>Email</h5>
+                <small><a href="maito:merchyhtml5@gmail.com">merchyhtml5@gmail.com</a></small>
             </aside>
 
             <aside class="contact-card box-shadow-1">
                 <i class="fas fa-hashtag  icon-card-contact"></i>
-                <h5>Ubicacion</h5>
-                <small>Venezuela, Estado Lara</small>
+                <h5>Social Media</h5>
+                <small class="social-media-icons">
+                    <a href="https://es-la.facebook.com/" target="__blank" rel="noopener"><i
+                            class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/" target="__blank" rel="noopener"> <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/Alvaro2005" target="__blank" rel="noopener"><i
+                            class="fab fa-github-square"></i> </a>
+                    <a href="https://www.instagram.com/?hl=es" target="__blank" rel="noopener"><i
+                            class="fab fa-instagram-square"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="__blank" rel="noopener"><i
+                            class="fab fa-twitter"></i></a>
+                </small>
             </aside>
         </article>
         <form class="contact-form box-shadow-1">
-
+            <input type="text" placeholder="Ingresa tu nombre" name="name"
+                title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required>
+            <input type="email" name="email" placeholder="ingresa tu correo *" title="Email Incorrecto"
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            <textarea name="comments" id="" cols="30" rows="10" placeholder="Dejame tus comentarios"
+                required></textarea>
+            <div class="contact-form-loader text-center">
+                <img src="assets/loader.svg" alt="Enviando" class="none">
+            </div>
+            <input class="btn-cv" type="submit" value="ENVIAR MENSAJE">
         </form>
-        <article id="gracias"></article>
+        <article id="gracias" class="modal">
+            <div class="modal-content">
+                <article class="contact-form-response">
+                    <h3>Muchas gracias <br> por tu Comentario</h3>
+                    <i class="fas fa-thumbs-up icon-modal-like"></i>
+                </article>
+            </div>
+        </article>
     </section>
     <script src="js/script.js"></script>
 </body>

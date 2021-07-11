@@ -13,9 +13,11 @@
     --three-color: #0A3B59;
     --four-color: #5B89A6;
     --five-color: #0D0D0D;
+    --white-color: #fff;
     --max-witdth: 1200px;
     --header-height: 4rem;
-
+    --font: font-family: 'Raleway',
+        sans-serif;
 }
 
 body {
@@ -31,6 +33,7 @@ body {
 
 .none {
     display: none;
+    pointer-events: none;
 }
 
 
@@ -44,6 +47,116 @@ body {
 
 .box-shadow-1 {
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*Formularios*/
+
+.contact-form {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.contact-form>* {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 0.85rem;
+    font-family: var(--font);
+}
+
+.contact-form input {
+    border: 0;
+    padding-left: 0;
+    border-bottom: thin solid var(--five-color);
+}
+
+.contact-form textarea {
+    border: thin solid var(--five-color);
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    margin-top: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
+
+}
+
+.contact-form input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.contact-form *::placeholder {
+    color: var(--five-color);
+}
+
+.contact-form-response {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.icon-modal-like {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #1760BF;
+}
+
+.modal#gracias:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ********** Modal ********** */
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+
+.modal[id|="trabajo"]:target {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /*Barra de Navegacion*/
@@ -335,7 +448,28 @@ body {
     height: auto;
     width: 100%;
     padding: 2rem 2.5rem;
-    background-color: rgba(241, 235, 235, 0.712);
+    transition: all .8s;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+}
+
+.contact-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card>small {
+    margin-top: -1rem;
 }
 
 .icon-card-contact {
@@ -343,6 +477,12 @@ body {
     color: #1760BF;
 }
 
+.social-media-icons a {
+    padding: 0rem .3rem;
+    text-decoration: none;
+    color: #0A3B59;
+    font-size: 1.3rem;
+}
 
 @media screen and (min-width: 1024px) {
     body {
@@ -525,6 +665,11 @@ body {
         gap: 10px;
     }
 
+
+    /*contactos*/
+    .contact-cards {
+        grid-template-columns: repeat(4, 24%);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -581,6 +726,12 @@ body {
     .container-portafolio {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*Contactos*/
+
+    .contact-cards {
+        display: block;
     }
 }
 

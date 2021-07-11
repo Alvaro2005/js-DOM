@@ -6,7 +6,7 @@ window.addEventListener("scroll", () => {
 
         for (let i = 0; i < imagen.length; i++) {
 
-            let altura = window.innerHeight / 1.2;
+            let altura = window.innerHeight / 1.4;
 
             let distancia = imagen[i].getBoundingClientRect().top;
 
