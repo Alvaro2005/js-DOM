@@ -34,7 +34,17 @@ body {
 }
 
 
+.section-title {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #1760BF;
+    text-align: center;
+    margin: 5% auto;
+    width: 70%;
+}
 
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
 
 /*Barra de Navegacion*/
 
@@ -318,6 +328,19 @@ body {
     border: thin solid #FFFFFF;
     width: 100%;
     height: 100%;
+}
+
+/*Contacto*/
+.section-contacto {
+    height: auto;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    background-color: rgba(241, 235, 235, 0.712);
+}
+
+.icon-card-contact {
+    font-size: 2.5rem;
+    color: #1760BF;
 }
 
 
