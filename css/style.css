@@ -34,6 +34,8 @@ body {
 }
 
 
+
+
 /*Barra de Navegacion*/
 
 /*Menu*/
@@ -164,6 +166,8 @@ body {
     width: 100%;
     padding: 2rem 2rem;
     background-color: rgba(241, 235, 235, 0.712);
+    opacity: 0;
+    transition: all .7s;
 }
 
 .sobre-mi-text>h2 {
@@ -204,6 +208,8 @@ body {
     height: auto;
     width: 100%;
     padding: 4rem 1.5rem;
+    opacity: 0;
+    transition: all .7s;
 }
 
 .habilidades-title {
@@ -261,7 +267,7 @@ body {
 .container-portafolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5;
+    gap: 5px;
 }
 
 .portafolio>h2 {
@@ -275,14 +281,17 @@ body {
 .portafolio-card {
     position: relative;
     width: 100%;
-    margin: 1rem auto;
+    margin: .4rem auto;
     display: block;
+    opacity: 0;
+    transition: all .8s;
 }
 
 .portafolio-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all .5s;
 }
 
 .portafolio-card-info {
@@ -310,6 +319,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
 @media screen and (min-width: 1024px) {
     body {
@@ -548,6 +558,26 @@ body {
     .container-portafolio {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 5;
     }
+}
+
+.transfort_up {
+    transform: translateY(20%);
+}
+
+.transfort_down {
+    transform: translateY(-20%);
+}
+
+.transfort_right {
+    transform: translateX(20%);
+}
+
+.transfort_left {
+    transform: translateX(-20%);
+}
+
+.aparece {
+    opacity: 1;
+    transform: none;
 }
