@@ -268,26 +268,42 @@ body {
 
 .container-hero-image {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding: 1rem 1.5rem;
 }
 
-.img-im {
+/* .img-im {
+    height: 10rem;
+    width: 70%;
     margin: 2rem 0rem;
-}
+    background: url("../img/icon-hero-image-1.png") no-repeat center / cover;
 
+} */
+
+/* 
 .img-im>img {
     height: 100%;
     width: 100%;
     border-radius: 90px;
+    background-repeat: no-repeat;
+
+} */
+
+.text-container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .text-container-hero h3 {
     color: #FFFFFF;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
 }
 
 .btn-cv {
@@ -295,7 +311,7 @@ body {
     outline: none;
     border: 1px solid #FFFFFF;
     padding: 1rem 5rem;
-    margin: 1.5rem 0rem;
+    margin: .8rem 0rem;
 }
 
 .btn-cv a {
