@@ -25,6 +25,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -171,7 +175,7 @@ body {
 }
 
 .classDark {
-    color: #017db3;
+    color: #1c98ce;
     background-color: #202225;
     transition: all .5s ease-in;
 }
@@ -631,6 +635,12 @@ body {
 
 .contact-card>small {
     margin-top: -1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact-card>small>a {
+    color: #1c98ce;
 }
 
 .icon-card-contact {
@@ -641,7 +651,7 @@ body {
 .social-media-icons a {
     padding: 0rem .3rem;
     text-decoration: none;
-    color: #0A3B59;
+    color: #1760BF;
     font-size: 1.3rem;
 }
 
