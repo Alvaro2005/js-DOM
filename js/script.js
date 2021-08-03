@@ -1,4 +1,10 @@
+window.addEventListener("load", () =>{
+      const contenedor_loader = document.getElementById("contentLoader");
+      contenedor_loader.style.opacity = 0;
+      contenedor_loader.style.visibility = "hidden";
+   });
 // efecto animacion cuando aparecen los elementos
+
 window.addEventListener("scroll", () => {
 
     function fade(direccion) {
@@ -149,5 +155,7 @@ function Scrollbtn(btn) {
     }
   });
 }
+
+
 
 Scrollbtn(".scroll-top-btn");
