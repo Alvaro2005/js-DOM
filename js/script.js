@@ -1,3 +1,4 @@
+// efecto animacion cuando aparecen los elementos
 window.addEventListener("scroll", () => {
 
     function fade(direccion) {
@@ -86,3 +87,67 @@ window.addEventListener("scroll", () => {
             });
     });
 })(document);
+
+//tema oscuro
+
+function  DarkMode(btn,classDark){
+    const $themeBtn = document.querySelector(btn);
+    const $seletor = document.querySelectorAll("[data-DarkMode");
+    // console.log($seletor);
+
+    let moon = "🌙";
+    let sun = "☀️";
+
+    const linghMode = () =>{
+        $seletor.forEach(el => el.classList.add("classDark"));
+          $themeBtn.textContent = sun;
+          // localStorage.setItem("theme","lingh");
+    };
+
+    const darkMode = () =>{
+       $seletor.forEach(el => el.classList.remove("classDark"));
+          $themeBtn.textContent = moon;
+          // localStorage.setItem("theme","darkc");
+    };
+
+    document.addEventListener("click",(e)=>{
+      if (e.target.matches(btn)) {
+        // console.log($themeBtn.textContent);
+        if ($themeBtn.textContent === moon) {
+          linghMode();
+        }else{
+          darkMode();
+        }
+      }
+    });
+};
+DarkMode(".dark-theme-btn","dark-mode");
+
+//Boton que te devuelve al inicio de la pagina
+
+
+function Scrollbtn(btn) {
+
+  const $crollbtn = document.querySelector(btn);
+
+  window.addEventListener("scroll", (e) =>{
+    let scrollTop = window.pageYOffset;
+
+    if (scrollTop > 500) {
+      $crollbtn.classList.remove("hidden");
+    }else{
+      $crollbtn.classList.add("hidden");
+    }
+  });
+
+  document.addEventListener("click",(e) =>{
+    if (e.target.matches(btn)) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: 0,
+      })
+    }
+  });
+}
+
+Scrollbtn(".scroll-top-btn");

@@ -53,6 +53,69 @@ body {
     text-align: center;
 }
 
+/* **********     ScrollTopButton     ********** */
+.scroll-top-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: calc(1.25rem + 1vw);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--four-color);
+    color: var(--second-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all 0.1s ease-out;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*Boton de tema oscuro o claro*/
+.dark-theme-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--four-color);
+    color: var(--second-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover {
+    background-color: var(--firts-color);
+    color: var(--firts-color);
+}
+
+.dark-mode {
+    color: aqua;
+    background-color: rgba(228, 228, 55, 0.876);
+}
+
+.classDark {
+    color: #1760BF;
+    background-color: #0D0D0D;
+    transition: all .5s ease-in;
+}
 
 /*Formularios*/
 
