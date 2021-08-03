@@ -21,7 +21,7 @@
 }
 
 body {
-    padding-top: var(--header-height);
+    /* padding-top: var(--header-height); */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -355,7 +355,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     padding: 1rem;
