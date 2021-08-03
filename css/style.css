@@ -107,13 +107,13 @@ body {
 }
 
 .dark-mode {
-    color: aqua;
-    background-color: rgba(228, 228, 55, 0.876);
+    color: var(--firts-color);
+    background-color: #36393f;
 }
 
 .classDark {
-    color: #1760BF;
-    background-color: #0D0D0D;
+    color: #017db3;
+    background-color: #202225;
     transition: all .5s ease-in;
 }
 
