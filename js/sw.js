@@ -9,8 +9,6 @@ const CACHE_NAME = 'v1_cache_portafolio_alvaro',
     'https://use.fontawesome.com/releases/v5.0.6/webfonts/fa-brands-400.woff2',
     './css/style.css',
     './js/script.js',
-    './img/ProgramadorFitness.png',
-    './img/favicon.png'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
