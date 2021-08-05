@@ -315,11 +315,11 @@ a {
     outline: thin solid var(--firts-color);
     border: 0;
     cursor: pointer;
-    background-color: var(--second-color);
+    background-color: var(--firts-color);
 }
 
 .menu-btn>svg {
-    fill: var(--five-color);
+    fill: var(--white-color);
 }
 
 .menu {
@@ -400,22 +400,6 @@ a {
     padding: 1rem 1.5rem;
 }
 
-/* .img-im {
-    height: 10rem;
-    width: 70%;
-    margin: 2rem 0rem;
-    background: url("../img/icon-hero-image-1.png") no-repeat center / cover;
-
-} */
-
-/* 
-.img-im>img {
-    height: 100%;
-    width: 100%;
-    border-radius: 90px;
-    background-repeat: no-repeat;
-
-} */
 
 .text-container-hero {
     display: flex;
@@ -501,7 +485,7 @@ a {
 
 .habilidades-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 5% auto;
     border-bottom: 2px solid #1760BF;
     width: 70%;
@@ -513,7 +497,7 @@ a {
 
 .habilidades-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30%);
     justify-content: center;
     align-items: center;
 }
@@ -615,6 +599,15 @@ a {
     padding: 2rem 2.5rem;
     opacity: .3;
     transition: all .7s;
+}
+
+.section-contacto>div.container>h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 5% auto;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--firts-color);
+    width: 70%;
 }
 
 .contact-cards {
@@ -881,7 +874,7 @@ a {
     .habilidades-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        padding-left: 1.5rem;
+        padding-left: .5rem;
     }
 
     .habilidades-items {
@@ -897,7 +890,7 @@ a {
     }
 
     .icon-css-skill {
-        margin-bottom: rem;
+        margin-bottom: 0;
         height: 8rem;
     }
 
