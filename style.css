@@ -388,7 +388,7 @@ a {
 .hero {
     height: auto;
     width: 100%;
-    background: url("../img/hero-image-1.jpg") no-repeat center / cover;
+    background: url("./img/hero-image-1.jpg") no-repeat center / cover;
     background-attachment: fixed;
 }
 
