@@ -50,7 +50,7 @@ a {
 }
 
 .box-shadow-1 {
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0.35rem 0.40rem 1.5rem rgba(0, 0, 0, 0.25);
 }
 
 .text-center {
@@ -452,7 +452,7 @@ a {
     height: auto;
     width: 100%;
     padding: 2rem 2rem;
-    background-color: rgba(241, 235, 235, 0.712);
+    /* background-color: rgba(241, 235, 235, 0.712); */
     opacity: 0;
     transition: all .7s;
 }
@@ -504,7 +504,7 @@ a {
     font-size: 1.8rem;
     margin: 5% auto;
     border-bottom: 2px solid #1760BF;
-    width: 80%;
+    width: 70%;
 }
 
 .habilidades-title>h2 {
@@ -561,8 +561,9 @@ a {
     text-align: center;
     font-size: 2.2rem;
     margin: 5% auto;
+    padding-bottom: 1rem;
     border-bottom: 2px solid var(--firts-color);
-    width: 80%;
+    width: 70%;
 }
 
 .portafolio-card {
@@ -759,7 +760,7 @@ a {
     /*Sobre Mi*/
     .sobre-mi {
         padding: 2rem 2rem;
-        background-color: rgba(241, 235, 235, 0.712);
+        /* background-color: rgba(241, 235, 235, 0.712); */
     }
 
     .sobre-mi-container {
@@ -880,6 +881,7 @@ a {
     .habilidades-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        padding-left: 1.5rem;
     }
 
     .habilidades-items {
