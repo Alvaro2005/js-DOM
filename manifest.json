@@ -1,5 +1,5 @@
 {
-     "name": "Portafolio Alvaro",
+   "name": "Portafolio Alvaro",
   "short_name": "#Alvaro",
   "description": "Hola Bienvenido a mi Portafolio Web Soy Alvaro Isaac Aspirante a Programador Web",
   "background_color": "#034873",
@@ -7,7 +7,7 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./index.html?utm_source=web_app_manifest",
-  "scope": "/",
+  "scope": "./",
   "lang": "es",
   "icons": [
     {
