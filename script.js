@@ -91,7 +91,7 @@ window.addEventListener("scroll", () => {
                 $loader.classList.add("none");
                 setTimeout(() => {
                     location.hash = "#close";
-                }, 3000);
+                }, 2000);
             });
     });
 })(document);
@@ -141,7 +141,7 @@ function Scrollbtn(btn) {
   window.addEventListener("scroll", (e) =>{
     let scrollTop = window.pageYOffset;
 
-    if (scrollTop > 900) {
+    if (scrollTop > 1000) {
       $crollbtn.classList.remove("hidden");
     }else{
       $crollbtn.classList.add("hidden");
