@@ -5,9 +5,9 @@ const CACHE_NAME = 'v1_cache_portafolio_alvaro',
     './',
     'https://fonts.googleapis.com/css?family=Raleway:400,700',
     'https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2',
-    './css/style.css',
-    './js/script.js',
-    './js/pwa.js',
+    './style.css',
+    './script.js',
+    './pwa.js',
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
