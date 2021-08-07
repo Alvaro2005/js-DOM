@@ -98,38 +98,6 @@ window.addEventListener("scroll", () => {
 
 //tema oscuro
 
-function  DarkMode(btn,classDark){
-    const $themeBtn = document.querySelector(btn);
-    const $seletor = document.querySelectorAll("[data-DarkMode");
-    // console.log($seletor);
-
-    let moon = "🌙";
-    let sun = "☀️";
-
-    const linghMode = () =>{
-        $seletor.forEach(el => el.classList.add("classDark"));
-          $themeBtn.textContent = sun;
-          // localStorage.setItem("theme","lingh");
-    };
-
-    const darkMode = () =>{
-       $seletor.forEach(el => el.classList.remove("classDark"));
-          $themeBtn.textContent = moon;
-          // localStorage.setItem("theme","darkc");
-    };
-
-    document.addEventListener("click",(e)=>{
-      if (e.target.matches(btn)) {
-        // console.log($themeBtn.textContent);
-        if ($themeBtn.textContent === moon) {
-          linghMode();
-        }else{
-          darkMode();
-        }
-      }
-    });
-};
-DarkMode(".dark-theme-btn","dark-mode");
 
 //Boton que te devuelve al inicio de la pagina
 
@@ -157,7 +125,28 @@ function Scrollbtn(btn) {
     }
   });
 }
-
-
-
 Scrollbtn(".scroll-top-btn");
+
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () => {
+	document.body.classList.toggle('dark');
+	btnSwitch.classList.toggle('active-dark');
+
+	// Guardamos el modo en localstorage.
+	if(document.body.classList.contains('dark')){
+		localStorage.setItem('dark-mode', 'true');
+	} else {
+		localStorage.setItem('dark-mode', 'false');
+	}
+});
+
+// Obtenemos el modo actual.
+if(localStorage.getItem('dark-mode') === 'true'){
+	document.body.classList.add('dark');
+	btnSwitch.classList.add('active-dark');
+} else {
+	document.body.classList.remove('dark');
+	btnSwitch.classList.remove('active-dark');
+}
