@@ -13,7 +13,7 @@
     --three-color: #0A3B59;
     --four-color: #5B89A6;
     --five-color: #0D0D0D;
-    --color-dark-text: rgb(7, 180, 248);
+    --color-dark-text: rgb(13, 174, 238);
     --white-color: #fff;
     --max-witdth: 1200px;
     --header-height: 4rem;
@@ -89,7 +89,7 @@ a {
 }
 
 .switch.active-dark {
-    background-color: #3a3c3f;
+    background-color: #3a3c3dfb;
     color: aqua;
 }
 
